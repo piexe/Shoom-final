@@ -1,0 +1,27 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.giocoso.administrator.shoom.fragment.PhotoAddFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="fragment 2" />
+
+    <Button
+        android:id="@+id/move_fragment_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="move"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="prev"
+        android:id="@+id/prev_button"
+        android:layout_marginTop="200dp"/>
+
+</FrameLayout>

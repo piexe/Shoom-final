@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="sample_dimen">50dp</dimen>
+
+    <dimen name="popup_x">81dp</dimen>
+    <dimen name="popup_y">81dp</dimen>
+</resources>

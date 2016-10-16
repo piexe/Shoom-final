@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.giocoso.administrator.shoom.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@mipmap/sample0"
+        android:id="@+id/imageButton"
+        android:background="?attr/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY" />
+    <TextView
+        android:id="@+id/label_1_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton"
+        android:gravity="center"
+        android:background="?attr/colorPrimary"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="Campaign"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:src="@mipmap/ad1"
+            android:id="@+id/imageButton2"
+            android:background="?attr/colorPrimary"
+            tools:scaleType="fitXY"
+            android:layout_below="@+id/label_1_text"
+            android:scaleType="fitXY" />
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_1_text"
+        android:src="@mipmap/mainc"
+        android:layout_marginTop="-1dp"
+
+        android:background="@color/button_transparent_background"
+        />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@mipmap/ad2"
+        android:id="@+id/imageButton3"
+        android:background="?attr/colorPrimary"
+        android:layout_below="@+id/imageButton2"
+        android:scaleType="fitXY" />
+    <TextView
+        android:id="@+id/label_2_text"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/imageButton3"
+        android:gravity="center"
+        android:background="?attr/colorPrimary"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="Public advertisement"/>
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/label_2_text"
+        />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/label_2_text"
+        android:src="@mipmap/mainc"
+        android:layout_marginTop="-1dp"
+        android:background="@color/button_transparent_background"
+        />
+    <TextView
+        android:id="@+id/label_3_text"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/videoView"
+        android:gravity="center"
+        android:background="#1abebd"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+</RelativeLayout>
