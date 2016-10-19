@@ -1,27 +1,53 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.giocoso.administrator.shoom.fragment.PhotoAddFragment">
+    tools:context="com.giocoso.administrator.shoom.fragment.PhotoAddFragment"
+
+    android:orientation="vertical"
+    >
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="fragment 2" />
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/textaddphoto"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/textaddphoto"
 
-    <Button
-        android:id="@+id/move_fragment_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="move"
-        android:layout_marginTop="100dp"/>
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            />
+        <ImageButton
+            android:id="@+id/addphoto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/addphoto"
+            android:layout_marginTop="100dp"
+            android:layout_below="@+id/textaddphoto"
+            />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="prev"
-        android:id="@+id/prev_button"
-        android:layout_marginTop="200dp"/>
+    </LinearLayout>
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:background="#1abebd"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+        </LinearLayout>
+    </LinearLayout>

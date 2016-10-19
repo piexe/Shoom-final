@@ -25,12 +25,13 @@
                 android:layout_height="match_parent"
                 android:gravity="center">
 
-                <TextView
+                <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textColor="#ffffff"
                 android:textSize="25dp"
+                    android:background="@android:color/transparent"
                     android:textScaleX="1.2"
                 android:text="SHOOM"/>
 

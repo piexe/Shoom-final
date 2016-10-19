@@ -4,10 +4,11 @@ package com.giocoso.administrator.shoom.fragment;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.giocoso.administrator.shoom.R;
 
@@ -16,7 +17,7 @@ import com.giocoso.administrator.shoom.R;
  */
 public class WritenoteFragment extends Fragment {
 
-    Button move_framgment_button;
+    ImageButton move_framgment_button;
 
     public WritenoteFragment() {
         // Required empty public constructor
@@ -29,14 +30,16 @@ public class WritenoteFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_writenote, container, false);
 
-        move_framgment_button = (Button)view.findViewById(R.id.move_framgment_button);
+
+        move_framgment_button = (ImageButton)view.findViewById(R.id.move_framgment_button);
 
         move_framgment_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.content_dying_experience_test, new PhotoAddFragment()
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.content_dying_experience_test, new WritenoteEditFragment()
                 ).setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE).addToBackStack(null)
                         .commit();
+
             }
         });
 

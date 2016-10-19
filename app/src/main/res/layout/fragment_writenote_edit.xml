@@ -2,10 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    android:layout_margin="50dp"
-    tools:context="com.giocoso.administrator.shoom.fragment.PhotoSelect">
-
+     android:layout_margin="50dp"
+    tools:context="com.giocoso.administrator.shoom.fragment.WritenoteEditFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ImageButton
@@ -18,24 +16,23 @@
         android:layout_marginRight="20dp"
         android:src="@mipmap/checkbtn"
         android:background="@android:color/transparent" />
-    <RelativeLayout
-        android:layout_width="wrap_content"
+
+    <ScrollView
         android:layout_below="@+id/move_frament_button2"
-        android:gravity="center"
-        android:layout_height="wrap_content">
-    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="match_parent" >
 
-        android:background="@color/black_color"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:text="photoselect"
-        android:textColor="#FFFFFF"
-        android:layout_height="wrap_content" />
-    </RelativeLayout>
+        <EditText
+            android:id="@+id/memoBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:scrollbars="vertical"
+            android:textSize="20dp" />
 
-
-
+    </ScrollView>
 
 </RelativeLayout>

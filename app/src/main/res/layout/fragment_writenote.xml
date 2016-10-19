@@ -1,19 +1,69 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.giocoso.administrator.shoom.fragment.WritenoteFragment">
+    tools:context="com.giocoso.administrator.shoom.fragment.WritenoteFragment"
+    android:orientation="vertical"
+    >
 
-    <Button
-        android:id="@+id/move_framgment_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="next"
-        android:layout_marginTop="100dp"/>
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="final fragment"
-        android:id="@+id/textView" />
-</FrameLayout>
+        android:padding="50dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/writenote"
+        android:background="@android:color/transparent"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+    <ImageButton
+        android:layout_width="280dp"
+        android:layout_height="320dp"
+        android:src="@mipmap/noteimage"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+    <ImageButton
+        android:id="@+id/move_framgment_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="next"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/nextbtn"
+        android:background="@android:color/transparent" />
+    </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="#1abebd"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+    </LinearLayout>
+</LinearLayout>

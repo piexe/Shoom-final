@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.giocoso.administrator.shoom.R;
 
@@ -16,8 +16,7 @@ import com.giocoso.administrator.shoom.R;
  */
 public class PhotoAddFragment extends Fragment {
 
-    Button move_button;
-    Button prev_button;
+    ImageButton addphoto_button;
 
     public PhotoAddFragment() {
         // Required empty public constructor
@@ -30,24 +29,17 @@ public class PhotoAddFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_photo_add, container, false);
 
-        move_button = (Button)view.findViewById(R.id.move_fragment_2);
-        prev_button = (Button)view.findViewById(R.id.prev_button);
+        addphoto_button = (ImageButton)view.findViewById(R.id.addphoto);
 
-        move_button.setOnClickListener(new View.OnClickListener() {
+        addphoto_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.content_dying_experience_test, new PhotoSelect()
-                ).setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE).addToBackStack(null).p
+                ).setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE).addToBackStack(null)
                         .commit();
             }
         });
 
-        prev_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
 
         return view;
     }

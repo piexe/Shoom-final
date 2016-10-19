@@ -113,7 +113,8 @@ public class MainActivity extends AppCompatActivity {
         helper_option_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "임종체험", Toast.LENGTH_SHORT).show();
+
+                helper_popup.dismiss();
 
                 Intent inent = new Intent(MainActivity.this, DyingExperienceTest.class);
 
@@ -124,14 +125,19 @@ public class MainActivity extends AppCompatActivity {
         helper_option_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "개발정보", Toast.LENGTH_SHORT).show();
+
+                Intent inent = new Intent(MainActivity.this, Findaservicecenter.class);
+
+                startActivity(inent);
             }
         });
 
         helper_option_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "문의사항", Toast.LENGTH_SHORT).show();
+                Intent inent = new Intent(MainActivity.this, Selftest.class);
+
+                startActivity(inent);
             }
         });
         // ATTENTION: This was auto-generated to implement the App Indexing API.
