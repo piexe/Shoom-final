@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.giocoso.administrator.shoom.fragment.WritenoteFragment"
+    tools:context="com.giocoso.administrator.shoom.dyingexperiencetestfragment.WritenoteFragment"
     android:orientation="vertical"
     >
 
@@ -26,8 +26,8 @@
         android:layout_marginTop="10dp"
         android:layout_gravity="center">
     <ImageButton
-        android:layout_width="280dp"
-        android:layout_height="320dp"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
         android:src="@mipmap/noteimage"
         android:scaleType="fitXY"
         android:background="@android:color/transparent"

@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         });
         // 비디오 //
 
-        VideoView vv = (VideoView) findViewById(videoView);
+        final VideoView vv = (VideoView) findViewById(videoView);
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(vv);
         Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.dead);
@@ -82,8 +82,20 @@ public class MainActivity extends AppCompatActivity {
         vv.setVideoURI(uri);
         mediaController.requestFocus();
 
+
+        mediaController = new MediaController(this);
+        vv.setMediaController(mediaController);
+
         vv.start();
-        vv.stopPlayback();
+
+        final MediaController finalMediaController = mediaController;
+        vv.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                finalMediaController.show(0);
+                vv.pause();
+            }
+        }, 200);
         option_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -125,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
         helper_option_2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                helper_popup.dismiss();
                 Intent inent = new Intent(MainActivity.this, Findaservicecenter.class);
 
                 startActivity(inent);
@@ -135,6 +147,7 @@ public class MainActivity extends AppCompatActivity {
         helper_option_3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                helper_popup.dismiss();
                 Intent inent = new Intent(MainActivity.this, Selftest.class);
 
                 startActivity(inent);
@@ -180,4 +193,5 @@ public class MainActivity extends AppCompatActivity {
                 .setActionStatus(Action.STATUS_TYPE_COMPLETED)
                 .build();
     }
+
 }

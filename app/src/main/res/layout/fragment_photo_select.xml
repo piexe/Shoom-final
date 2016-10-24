@@ -1,13 +1,22 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:layout_margin="50dp"
-    tools:context="com.giocoso.administrator.shoom.fragment.PhotoSelect">
+    tools:context="com.giocoso.administrator.shoom.dyingexperiencetestfragment.PhotoSelect"
+    android:orientation="vertical"
+    >
 
 
     <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:gravity="right"
+        >
     <ImageButton
 
         android:id="@+id/move_frament_button2"
@@ -16,6 +25,7 @@
         android:layout_height="50dp"
         android:scaleType="fitXY"
         android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
         android:src="@mipmap/checkbtn"
         android:background="@android:color/transparent" />
     <RelativeLayout
@@ -34,8 +44,23 @@
         android:textColor="#FFFFFF"
         android:layout_height="wrap_content" />
     </RelativeLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:background="#1abebd"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+    </LinearLayout>
 
 
 
-
-</RelativeLayout>
+</LinearLayout>

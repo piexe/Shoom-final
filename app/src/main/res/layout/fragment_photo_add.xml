@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.giocoso.administrator.shoom.fragment.PhotoAddFragment"
+    tools:context="com.giocoso.administrator.shoom.dyingexperiencetestfragment.PhotoAddFragment"
 
     android:orientation="vertical"
     >
@@ -17,17 +17,16 @@
         android:orientation="vertical">
         <ImageButton
             android:id="@+id/textaddphoto"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
+            android:layout_width="310dp"
+            android:layout_height="40dp"
             android:src="@mipmap/textaddphoto"
-
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
             />
         <ImageButton
             android:id="@+id/addphoto"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:src="@mipmap/addphoto"
             android:layout_marginTop="100dp"
             android:layout_below="@+id/textaddphoto"

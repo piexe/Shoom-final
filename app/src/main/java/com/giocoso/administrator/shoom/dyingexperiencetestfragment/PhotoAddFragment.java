@@ -1,4 +1,4 @@
-package com.giocoso.administrator.shoom.fragment;
+package com.giocoso.administrator.shoom.dyingexperiencetestfragment;
 
 
 import android.os.Bundle;

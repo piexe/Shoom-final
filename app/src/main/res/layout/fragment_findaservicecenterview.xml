@@ -1,13 +1,50 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.giocoso.administrator.shoom.Findaservicecenter.Findaservicecenterview">
+    tools:context="com.giocoso.administrator.shoom.findaservicecenter.findaservicecenterview">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@mipmap/center2"
+        android:id="@+id/imageButton1"
+        android:background="?attr/colorPrimary"
+        android:scaleType="fitXY" />
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@mipmap/center3"
+        android:layout_marginTop="25dp"
+        android:id="@+id/imageButton2"
+        android:layout_below="@+id/imageButton1"
+        android:background="?attr/colorPrimary"
+        android:scaleType="fitXY" />
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@mipmap/center1"
+        android:layout_marginTop="25dp"
+        android:id="@+id/imageButton3"
+        android:layout_below="@+id/imageButton2"
+        android:background="?attr/colorPrimary"
+        android:scaleType="fitXY" />
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@mipmap/center4"
+        android:layout_marginTop="25dp"
+        android:id="@+id/imageButton4"
+        android:layout_below="@+id/imageButton3"
+        android:background="?attr/colorPrimary"
+        android:scaleType="fitXY" />
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
-
-</FrameLayout>
+        android:layout_below="@+id/imageButton4"
+        android:gravity="center"
+        android:background="#1abebd"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+</RelativeLayout>
